@@ -1,0 +1,55 @@
+.sobrenos {
+    background-image: url(https://i.ibb.co/QMVb8Rr/sobrenos-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    z-index: -2;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.sobrenos-container {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.texto-sobre {
+    color: var(--cor-branca);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .sobrenos-container  {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .sobrenos {
+        height: 400px;
+    }
+
+    .sobrenos-container {
+        padding-left: 0;
+        padding-right: 0;
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .texto-sobre {
+        font-size: 30px;
+        line-height: 35px;
+        padding-bottom: 0;
+    }
+
+    .texto-sobre:nth-child(2) {
+        padding-bottom: 40px;
+    }
+}

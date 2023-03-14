@@ -1,0 +1,106 @@
+@import url("header.css");
+@import url("destaques.css");
+@import url("promocao.css");
+@import url("carrosel.css");
+@import url("sobrenos.css");
+@import url("mapa.css");
+@import url("valores.css");
+@import url("contato.css");
+@import url("rodape.css");
+@import url("produtos.css");
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family-padrao: 'Josefin Sans', sans-serif;
+    --cor-branca: #ffffff;
+    --cor-preta: #000000;
+    --cor-vermelha-padrao: #6d0000;
+}
+
+body {
+    background: var(--cor-branca);
+    font-family: var(--font-family-padrao);
+}
+
+main {
+    padding-top: 53px;
+    position: relative;
+}
+
+.h2-preto {
+    color: var(--cor-preta);
+}
+
+h2 {
+    color: var(--cor-branca);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.mascara2 {
+    background-color: var(--cor-preta);
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+    position: absolute;
+    z-index: -2;
+}
+
+.link-whatsapp {
+    background-color: #25D366;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+    position: fixed;
+    top: 95%;
+    left: 95%;
+    transform: translate(-95%, -95%);
+    z-index: 50;
+}
+
+.link-whatsapp:hover {
+    transform: translate(-95%, -95%) scale(1.1);
+    background-color: #14ac4c;
+}
+
+.link-whatsapp:active {
+    transform: translate(-95%, -95%) scale(1);
+}
+
+.link-whatsapp img {
+    height: 70%;
+    width: 70%;
+}
+
+.esconde {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .link-whatsapp {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding-top: 65px;
+    }
+
+    h2 {
+        padding-bottom: 40px;
+        font-size: 30px;
+    }
+}
